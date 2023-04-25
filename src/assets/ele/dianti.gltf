@@ -1,0 +1,1028 @@
+{
+    "asset": {
+        "version": "2.0",
+        "generator": "babylon.js glTF exporter for 3ds max 2017 v1.4.2"
+    },
+    "scene": 0,
+    "scenes": [
+        {
+            "nodes": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5,
+                6,
+                7
+            ],
+            "extensions": {}
+        }
+    ],
+    "nodes": [
+        {
+            "mesh": 0,
+            "translation": [
+                0,
+                0,
+                -6.48826358e-7
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "JX06_ZuoMian1"
+        },
+        {
+            "mesh": 1,
+            "translation": [
+                0,
+                0,
+                -6.48826358e-7
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "JX06_BeiMian1"
+        },
+        {
+            "mesh": 2,
+            "translation": [
+                0,
+                0,
+                -6.48826358e-7
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "JX06_YouMian"
+        },
+        {
+            "mesh": 3,
+            "translation": [
+                0,
+                0,
+                -6.48826358e-7
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "JX06_DiMian"
+        },
+        {
+            "mesh": 4,
+            "translation": [
+                0,
+                0,
+                -6.48826358e-7
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "initialShadingGroup_ZhenMian"
+        },
+        {
+            "mesh": 5,
+            "translation": [
+                0,
+                0,
+                -6.48826358e-7
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "ZhenMian"
+        },
+        {
+            "mesh": 6,
+            "translation": [
+                0,
+                0,
+                -6.48826358e-7
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "DingMian"
+        },
+        {
+            "translation": [
+                0,
+                0,
+                0
+            ],
+            "rotation": [
+                0,
+                0,
+                0,
+                1
+            ],
+            "scale": [
+                1,
+                1,
+                1
+            ],
+            "name": "Default light"
+        }
+    ],
+    "meshes": [
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 1,
+                        "NORMAL": 2,
+                        "TEXCOORD_0": 3
+                    },
+                    "indices": 0,
+                    "mode": 4,
+                    "material": 0
+                }
+            ],
+            "name": "JX06_ZuoMian1"
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 5,
+                        "NORMAL": 6,
+                        "TEXCOORD_0": 7
+                    },
+                    "indices": 4,
+                    "mode": 4,
+                    "material": 0
+                }
+            ],
+            "name": "JX06_BeiMian1"
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 9,
+                        "NORMAL": 10,
+                        "TEXCOORD_0": 11
+                    },
+                    "indices": 8,
+                    "mode": 4,
+                    "material": 0
+                },
+                {
+                    "attributes": {
+                        "POSITION": 13,
+                        "NORMAL": 14,
+                        "TEXCOORD_0": 15
+                    },
+                    "indices": 12,
+                    "mode": 4,
+                    "material": 1
+                }
+            ],
+            "name": "JX06_YouMian"
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 17,
+                        "NORMAL": 18,
+                        "TEXCOORD_0": 19
+                    },
+                    "indices": 16,
+                    "mode": 4,
+                    "material": 2
+                }
+            ],
+            "name": "JX06_DiMian"
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 21,
+                        "NORMAL": 22,
+                        "TEXCOORD_0": 23
+                    },
+                    "indices": 20,
+                    "mode": 4,
+                    "material": 3
+                }
+            ],
+            "name": "initialShadingGroup_ZhenMian"
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 25,
+                        "NORMAL": 26,
+                        "TEXCOORD_0": 27
+                    },
+                    "indices": 24,
+                    "mode": 4,
+                    "material": 4
+                },
+                {
+                    "attributes": {
+                        "POSITION": 29,
+                        "NORMAL": 30,
+                        "TEXCOORD_0": 31
+                    },
+                    "indices": 28,
+                    "mode": 4,
+                    "material": 5
+                }
+            ],
+            "name": "ZhenMian"
+        },
+        {
+            "primitives": [
+                {
+                    "attributes": {
+                        "POSITION": 33,
+                        "NORMAL": 34,
+                        "TEXCOORD_0": 35
+                    },
+                    "indices": 32,
+                    "mode": 4,
+                    "material": 6
+                },
+                {
+                    "attributes": {
+                        "POSITION": 37,
+                        "NORMAL": 38,
+                        "TEXCOORD_0": 39
+                    },
+                    "indices": 36,
+                    "mode": 4,
+                    "material": 7
+                }
+            ],
+            "name": "DingMian"
+        }
+    ],
+    "accessors": [
+        {
+            "bufferView": 0,
+            "componentType": 5123,
+            "count": 6,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "componentType": 5126,
+            "count": 6,
+            "max": [
+                -0.055,
+                0.225,
+                0.055
+            ],
+            "min": [
+                -0.055,
+                0,
+                -0.055
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 72,
+            "componentType": 5126,
+            "count": 6,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "componentType": 5126,
+            "count": 6,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 12,
+            "componentType": 5123,
+            "count": 6,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 144,
+            "componentType": 5126,
+            "count": 6,
+            "max": [
+                0.055,
+                0.225,
+                -0.055
+            ],
+            "min": [
+                -0.055,
+                0,
+                -0.055
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 216,
+            "componentType": 5126,
+            "count": 6,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 48,
+            "componentType": 5126,
+            "count": 6,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 24,
+            "componentType": 5123,
+            "count": 6,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 288,
+            "componentType": 5126,
+            "count": 6,
+            "max": [
+                0.055,
+                0.225,
+                0.055
+            ],
+            "min": [
+                0.055,
+                0,
+                -0.055
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 360,
+            "componentType": 5126,
+            "count": 6,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 96,
+            "componentType": 5126,
+            "count": 6,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 36,
+            "componentType": 5123,
+            "count": 390,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 432,
+            "componentType": 5126,
+            "count": 390,
+            "max": [
+                0.0546998829,
+                0.109,
+                0.0550013
+            ],
+            "min": [
+                0.054699868,
+                0.07999999,
+                0.0220013
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 5112,
+            "componentType": 5126,
+            "count": 390,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 144,
+            "componentType": 5126,
+            "count": 390,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 816,
+            "componentType": 5123,
+            "count": 6,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 9792,
+            "componentType": 5126,
+            "count": 6,
+            "max": [
+                0.055,
+                0,
+                0.055
+            ],
+            "min": [
+                -0.055,
+                0,
+                -0.055
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 9864,
+            "componentType": 5126,
+            "count": 6,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 3264,
+            "componentType": 5126,
+            "count": 6,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 828,
+            "componentType": 5123,
+            "count": 30,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 9936,
+            "componentType": 5126,
+            "count": 30,
+            "max": [
+                0.055,
+                0.225,
+                0.055
+            ],
+            "min": [
+                -0.055,
+                0,
+                0.055
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 10296,
+            "componentType": 5126,
+            "count": 30,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 3312,
+            "componentType": 5126,
+            "count": 30,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 888,
+            "componentType": 5123,
+            "count": 12,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 10656,
+            "componentType": 5126,
+            "count": 12,
+            "max": [
+                0.0358257256,
+                0.190025613,
+                0.055
+            ],
+            "min": [
+                -0.0356455557,
+                0,
+                0.055
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 10800,
+            "componentType": 5126,
+            "count": 12,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 3552,
+            "componentType": 5126,
+            "count": 12,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 912,
+            "componentType": 5123,
+            "count": 90,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 10944,
+            "componentType": 5126,
+            "count": 90,
+            "max": [
+                -0.0368302278,
+                0.144999981,
+                0.0547509
+            ],
+            "min": [
+                -0.053830225,
+                0.08999998,
+                0.0547508933
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 12024,
+            "componentType": 5126,
+            "count": 90,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 3648,
+            "componentType": 5126,
+            "count": 90,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 1092,
+            "componentType": 5123,
+            "count": 489,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 13104,
+            "componentType": 5126,
+            "count": 489,
+            "max": [
+                0.055,
+                0.225,
+                0.055
+            ],
+            "min": [
+                -0.055,
+                0.21803306,
+                -0.055
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 18972,
+            "componentType": 5126,
+            "count": 489,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 4368,
+            "componentType": 5126,
+            "count": 489,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        },
+        {
+            "bufferView": 0,
+            "byteOffset": 2072,
+            "componentType": 5123,
+            "count": 24,
+            "type": "SCALAR",
+            "name": "accessorIndices"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 24840,
+            "componentType": 5126,
+            "count": 24,
+            "max": [
+                0.04495631,
+                0.223150745,
+                0.0449140668
+            ],
+            "min": [
+                -0.0449493676,
+                0.220121115,
+                -0.04498468
+            ],
+            "type": "VEC3",
+            "name": "accessorPositions"
+        },
+        {
+            "bufferView": 1,
+            "byteOffset": 25128,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC3",
+            "name": "accessorNormals"
+        },
+        {
+            "bufferView": 2,
+            "byteOffset": 8280,
+            "componentType": 5126,
+            "count": 24,
+            "type": "VEC2",
+            "name": "accessorUVs"
+        }
+    ],
+    "bufferViews": [
+        {
+            "buffer": 0,
+            "byteLength": 2120,
+            "name": "bufferViewScalar"
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 2120,
+            "byteLength": 25416,
+            "byteStride": 12,
+            "name": "bufferViewFloatVec3"
+        },
+        {
+            "buffer": 0,
+            "byteOffset": 27536,
+            "byteLength": 8472,
+            "byteStride": 8,
+            "name": "bufferViewFloatVec2"
+        }
+    ],
+    "buffers": [
+        {
+            "uri": "dianti.bin",
+            "byteLength": 36008
+        }
+    ],
+    "materials": [
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 0,
+                    "texCoord": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.3048167
+            },
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "alphaMode": "OPAQUE",
+            "name": "JX06_BeiMian"
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 1,
+                    "texCoord": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.3048167
+            },
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "alphaMode": "OPAQUE",
+            "name": "CanCao"
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 2,
+                    "texCoord": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.3048167
+            },
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "alphaMode": "OPAQUE",
+            "name": "JX06_DiMian"
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 3,
+                    "texCoord": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.3048167
+            },
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "alphaMode": "OPAQUE",
+            "name": "JX06_ZhenMian"
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 4,
+                    "texCoord": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.3048167
+            },
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "alphaMode": "OPAQUE",
+            "name": "JX06_ZhenMian_Men"
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 5,
+                    "texCoord": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.3048167
+            },
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "alphaMode": "OPAQUE",
+            "name": "CaoZp"
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 6,
+                    "texCoord": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.3048167
+            },
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "alphaMode": "OPAQUE",
+            "name": "JX06_Ding"
+        },
+        {
+            "pbrMetallicRoughness": {
+                "baseColorFactor": [
+                    0.5,
+                    0.5,
+                    0.5,
+                    1
+                ],
+                "baseColorTexture": {
+                    "index": 7,
+                    "texCoord": 0
+                },
+                "metallicFactor": 0,
+                "roughnessFactor": 0.450053632
+            },
+            "emissiveFactor": [
+                0,
+                0,
+                0
+            ],
+            "alphaMode": "OPAQUE",
+            "name": "JX06_Deng"
+        }
+    ],
+    "textures": [
+        {
+            "sampler": 0,
+            "source": 0,
+            "name": "JX06_BeiMian.jpg"
+        },
+        {
+            "sampler": 0,
+            "source": 1,
+            "name": "宽操纵盘_圆按钮.png"
+        },
+        {
+            "sampler": 0,
+            "source": 2,
+            "name": "JX06_DiMian.jpg"
+        },
+        {
+            "sampler": 0,
+            "source": 3,
+            "name": "JX06_ZhenMian.jpg"
+        },
+        {
+            "sampler": 0,
+            "source": 4,
+            "name": "JX06_ZhenMian_Men.jpg"
+        },
+        {
+            "sampler": 0,
+            "source": 5,
+            "name": "长操纵盘_圆按钮.png"
+        },
+        {
+            "sampler": 0,
+            "source": 6,
+            "name": "JX06_Ding.jpg"
+        },
+        {
+            "sampler": 0,
+            "source": 7,
+            "name": "JX06_Deng.jpg"
+        }
+    ],
+    "images": [
+        {
+            "uri": "JX06_BeiMian.jpg"
+        },
+        {
+            "uri": "wide.png"
+        },
+        {
+            "uri": "JX06_DiMian.jpg"
+        },
+        {
+            "uri": "JX06_ZhenMian.jpg"
+        },
+        {
+            "uri": "JX06_ZhenMian_Men.jpg"
+        },
+        {
+            "uri": "long.png"
+        },
+        {
+            "uri": "JX06_Ding.jpg"
+        },
+        {
+            "uri": "JX06_Deng.jpg"
+        }
+    ],
+    "samplers": [
+        {
+            "magFilter": 9729,
+            "minFilter": 9987,
+            "wrapS": 10497,
+            "wrapT": 10497
+        }
+    ]
+}
