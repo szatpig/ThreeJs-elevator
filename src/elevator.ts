@@ -22,6 +22,7 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { RGBELoader } from "three/examples/jsm/loaders/RGBELoader";
 import { GUI } from "three/examples/jsm/libs/lil-gui.module.min";
 import Stats from "three/examples/jsm/libs/stats.module";
+// import { GLTFLoader } from "three/examples/jsm/sta";
 import elevatorGltf from "./assets/scene.gltf";
 import house from "./assets/house.webp";
 import fullBg from "./assets/fullbackground.hdr";
@@ -41,7 +42,7 @@ class Elevator {
 
     this.stats = new Stats();
     this.camera = new PerspectiveCamera(
-      45,
+      35,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
@@ -87,7 +88,7 @@ class Elevator {
 
   loadGltf() {
     this.gltfLoader.load(elevatorGltf, (gltf) => {
-      gltf.scene.scale.set(40, 40, 40);
+      gltf.scene.scale.set(44, 44, 44);
       this.scene.add(gltf.scene);
       this.render();
     });
@@ -116,7 +117,8 @@ class Elevator {
 
   animate() {
     requestAnimationFrame(() => this.animate());
-    this.render();
+
+    this.render;
   }
 
   onResize() {
