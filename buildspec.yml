@@ -6,11 +6,11 @@ phases:
   pre_build:
     commands:
       - echo Installing source NPM dependencies...
-      - yarn
+      - npm i 
   build:
     commands:
       - echo Build started on `date`
-      - yarn build
+      - npm run build
   post_build:
     commands:
       # empty deploy bucket
