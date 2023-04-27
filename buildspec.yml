@@ -18,8 +18,8 @@ phases:
       # copy the contents of /build to S3
       - aws s3 cp --recursive --acl public-read ./build s3://${DeployBucket}/
       # clear cloudfront cache
-      - aws cloudfront create-invalidation --distribution-id ${CloudFrontName} --paths "/*"
-      - aws cloudfront create-invalidation --distribution-id ${CloudFrontName2} --paths "/*"
+      # - aws cloudfront create-invalidation --distribution-id ${CloudFrontName} --paths "/*"
+      #c- aws cloudfront create-invalidation --distribution-id ${CloudFrontName2} --paths "/*"
 artifacts:
   files:
     - "**/*"
