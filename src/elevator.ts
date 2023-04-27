@@ -48,6 +48,7 @@ class Elevator {
       1000
     );
     this.camera.position.set(0, 0, 5);
+    this.camera.lookAt(1, 0, 0);
 
     this.renderer = new WebGLRenderer({ antialias: true });
     this.renderer.setSize(window.innerWidth, window.innerHeight);

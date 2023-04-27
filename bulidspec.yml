@@ -1,0 +1,26 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 14
+  pre_build:
+    commands:
+      - echo Installing source NPM dependencies...
+      - yarn
+  build:
+    commands:
+      - echo Build started on `date`
+      - yarn build
+  post_build:
+    commands:
+      # empty deploy bucket
+      - aws s3 rm s3://${DeployBucket} --recursive
+      # copy the contents of /build to S3
+      - aws s3 cp --recursive --acl public-read ./build s3://${DeployBucket}/
+      # clear cloudfront cache
+      - aws cloudfront create-invalidation --distribution-id ${CloudFrontName} --paths "/*"
+      - aws cloudfront create-invalidation --distribution-id ${CloudFrontName2} --paths "/*"
+artifacts:
+  files:
+    - "**/*"
+  base-directory: build
