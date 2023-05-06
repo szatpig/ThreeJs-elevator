@@ -7,4 +7,3 @@ COPY ./dist/ /usr/share/nginx/html/
 # 指定端口
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
