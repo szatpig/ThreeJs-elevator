@@ -13,7 +13,7 @@ jobs:
       # 拉取代码
       - name: checkout # 步骤名字
         # 使用action库  actions/checkout拉取源码
-        uses: actions/checkout@master
+        uses: actions/checkout@main
 
       # 安装依赖
       - name: install
@@ -28,12 +28,12 @@ jobs:
         run: |
           # 登录阿里云镜像容器服务
           docker login --username=${{ secrets.DOCKER_USERNAME }} registry.cn-hangzhou.aliyuncs.com --password=${{ secrets.DOCKER_PASSWORD }}
-          # 使用当前目录的 Dockerfile 创建镜像，标签为 react-demo:latest
-          docker build -t react-demo:latest . 
+          # 使用当前目录的 Dockerfile 创建镜像，标签为 elevator:latest
+          docker build -t elevator:latest . 
           # 打标签
-          docker tag react-demo registry.cn-hangzhou.aliyuncs.com/yusongh/react-demo:latest
+          docker tag react-demo registry.cn-hangzhou.aliyuncs.com/elevator-hub/elevator:latest
           # 推送到阿里云镜像容器服务
-          docker push registry.cn-hangzhou.aliyuncs.com/yusongh/react-demo:latest
+          docker push registry.cn-hangzhou.aliyuncs.com/elevator-hub/elevator:latest
       # 登录服务器执行脚本
       - name: ssh docker login
         uses: appleboy/ssh-action@master
@@ -41,4 +41,4 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USERNAME }}
           password: ${{ secrets.SSH_PASSWORD }}
-          script: cd /home/react-demo/ && sh react-demo.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
+          script: cd /usr/app/elevator/ && sh elevator.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
