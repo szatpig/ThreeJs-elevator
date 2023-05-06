@@ -29,5 +29,5 @@ jobs:
          with: 
             host: ${{ secrets.SSH_HOST }}
             username: ${{ secrets.SSH_USERNAME }}
-            key: ${{ secrets.SSH_KEY }}
+            password: ${{ secrets.SSH_PASSWORD }}
             script: cd /usr/app/elevator/ && sh docker.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
