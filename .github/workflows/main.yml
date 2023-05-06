@@ -1,6 +1,6 @@
-name: Docker Image CI # Actions名称
+name: Elevator Images 
 
-on: # 执行时机
+on:
   push:
     branches:
       - master
