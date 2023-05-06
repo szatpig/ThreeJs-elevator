@@ -1,0 +1,44 @@
+name: Docker Image CI # Actions名称
+
+on: # 执行时机
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    # runs-on 指定job任务运行所需要的虚拟机环境(必填字段)
+    runs-on: ubuntu-latest
+    steps:
+      # 拉取代码
+      - name: checkout # 步骤名字
+        # 使用action库  actions/checkout拉取源码
+        uses: actions/checkout@master
+
+      # 安装依赖
+      - name: install
+        run: npm install
+
+      # 打包
+      - name: build project
+        run: npm run build
+        
+      # 登录阿里云镜像容器服务，打包镜像，推送镜像
+      - name: Build the Docker image
+        run: |
+          # 登录阿里云镜像容器服务
+          docker login --username=${{ secrets.DOCKER_USERNAME }} registry.cn-hangzhou.aliyuncs.com --password=${{ secrets.DOCKER_PASSWORD }}
+          # 使用当前目录的 Dockerfile 创建镜像，标签为 react-demo:latest
+          docker build -t react-demo:latest . 
+          # 打标签
+          docker tag react-demo registry.cn-hangzhou.aliyuncs.com/yusongh/react-demo:latest
+          # 推送到阿里云镜像容器服务
+          docker push registry.cn-hangzhou.aliyuncs.com/yusongh/react-demo:latest
+      # 登录服务器执行脚本
+      - name: ssh docker login
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ${{ secrets.SSH_USERNAME }}
+          password: ${{ secrets.SSH_PASSWORD }}
+          script: cd /home/react-demo/ && sh react-demo.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
