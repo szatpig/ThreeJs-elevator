@@ -13,10 +13,10 @@ jobs:
          uses: actions/checkout@main
          
        - name: install
-         run: npm install
+         run: yarn
          
        - name: build project
-         run: npm run build
+         run: yarn build
        - name: Build the Docker image
          run: 
            docker login --username=${{ secrets.DOCKER_USERNAME }} registry.cn-hangzhou.aliyuncs.com --password=${{ secrets.DOCKER_PASSWORD }}
