@@ -18,7 +18,7 @@ jobs:
        - name: build project
          run: yarn build
        - name: Build the Docker image
-         run: 
+         run: |
            docker login --username=${{ secrets.DOCKER_USERNAME }} registry.cn-hangzhou.aliyuncs.com --password=${{ secrets.DOCKER_PASSWORD }}
            docker build -t elevator:latest . 
            docker tag react-demo registry.cn-hangzhou.aliyuncs.com/elevator-hub/elevator:latest
