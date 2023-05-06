@@ -2,42 +2,32 @@ name: Elevator Images
 
 on:
   push:
-   branches:
-     - main
+    branches:
+      - main
 
 jobs:
   build:
-    runs-on: ubuntu-latest
-    steps:
-      # 拉取代码
-      - name: checkout # 步骤名字
-        # 使用action库  actions/checkout拉取源码
-        uses: actions/checkout@main
-
-      # 安装依赖
-      - name: install
-        run: npm install
-
-      # 打包
-      - name: build project
-        run: npm run build
-        
-      # 登录阿里云镜像容器服务，打包镜像，推送镜像
-      - name: Build the Docker image
-        run: |
-          # 登录阿里云镜像容器服务
-          docker login --username=${{ secrets.DOCKER_USERNAME }} registry.cn-hangzhou.aliyuncs.com --password=${{ secrets.DOCKER_PASSWORD }}
-          # 使用当前目录的 Dockerfile 创建镜像，标签为 elevator:latest
-          docker build -t elevator:latest . 
-          # 打标签
-          docker tag react-demo registry.cn-hangzhou.aliyuncs.com/elevator-hub/elevator:latest
-          # 推送到阿里云镜像容器服务
-          docker push registry.cn-hangzhou.aliyuncs.com/elevator-hub/elevator:latest
-      # 登录服务器执行脚本
-      - name: ssh docker login
-        uses: appleboy/ssh-action@master
-        with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
-          key: ${{ secrets.SSH_KEY }}
-          script: cd /usr/app/elevator/ && sh docker.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
+    runs-on: ubuntu-latest
+    steps:
+       - name: checkout 
+         uses: actions/checkout@main
+         
+       - name: install
+         run: npm install
+         
+       - name: build project
+         run: npm run build
+       - name: Build the Docker image
+         run: 
+           docker login --username=${{ secrets.DOCKER_USERNAME }} registry.cn-hangzhou.aliyuncs.com --password=${{ secrets.DOCKER_PASSWORD }}
+           docker build -t elevator:latest . 
+           docker tag react-demo registry.cn-hangzhou.aliyuncs.com/elevator-hub/elevator:latest
+           docker push registry.cn-hangzhou.aliyuncs.com/elevator-hub/elevator:latest
+      
+       - name: ssh docker login
+         uses: appleboy/ssh-action@master
+         with: 
+            host: ${{ secrets.SSH_HOST }}
+            username: ${{ secrets.SSH_USERNAME }}
+            key: ${{ secrets.SSH_KEY }}
+            script: cd /usr/app/elevator/ && sh docker.sh ${{ secrets.DOCKER_USERNAME }} ${{ secrets.DOCKER_PASSWORD }}
